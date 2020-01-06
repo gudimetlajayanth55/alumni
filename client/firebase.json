@@ -1,0 +1,8 @@
+{
+    "hosting": {
+        "public": "localhost:3000",
+        "ignore": [
+            "firebase.json"
+        ]
+    }
+}

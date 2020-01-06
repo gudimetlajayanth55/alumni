@@ -1,0 +1,23 @@
+{
+  "name": "messagetoapp",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jayanth",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "firebase": "^7.6.1",
+    "firebase-admin": "^8.9.0",
+    "fs": "0.0.1-security",
+    "googleapis": "^46.0.0",
+    "html": "^1.0.0",
+    "https": "^1.0.0",
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}

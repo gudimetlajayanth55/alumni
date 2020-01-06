@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="manifest" href="manifest.json">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBEfjm5nfjHta7-2wg7cuhfnndgeGobLIU",
+            authDomain: "social-media-c0eea.firebaseapp.com",
+            databaseURL: "https://social-media-c0eea.firebaseio.com",
+            projectId: "social-media-c0eea",
+            storageBucket: "social-media-c0eea.appspot.com",
+            messagingSenderId: "549022756029",
+            appId: "1:549022756029:web:30e16ef03212b22fc41bd4",
+            measurementId: "G-X2WM7XTP1M"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const messaging = firebase.messaging();
+        messaging.requestPermission().then((permission) => {
+            if (permission === 'granted') {
+                console.log('Notification permission granted.');
+                // TODO(developer): Retrieve an Instance ID token for use with FCM.
+                // ...
+            } else {
+                console.log('Unable to get permission to notify.');
+            }
+        });
+    </script>
+</head>
+
+<body>
+    Welcome to firebase
+</body>
+
+</html>
